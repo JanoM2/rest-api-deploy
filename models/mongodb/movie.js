@@ -1,14 +1,14 @@
 import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb'
-const uri = 'mongodb+srv://martinojano0:<password>@cluster0.mkdp6vi.mongodb.net/'
+const uri = 'mongodb+srv://martinojano0:<GPTSV9OEjHEkcyMb>@cluster0.mkdp6vi.mongodb.net/'
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
-    deprecationErrors: true
+    deprecationErrors: true,
   }
-})
+});
 
 async function connect() {
   try {
